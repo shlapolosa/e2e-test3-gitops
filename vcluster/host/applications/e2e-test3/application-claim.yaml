@@ -1,0 +1,15 @@
+apiVersion: platform.example.org/v1alpha1
+kind: ApplicationClaim
+metadata:
+  name: e2e-test3
+  namespace: default
+  annotations:
+    webservice.oam.dev/source: "api-driven"
+    webservice.oam.dev/processed-by: "host-cluster-composition"
+spec:
+  appContainer: e2e-test3
+  name: e2e-test3
+  language: python
+  framework: fastapi
+  database: none
+  cache: none
